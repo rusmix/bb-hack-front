@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Рулетка JS #2</title>
+  </head>
+  <body>
+    <div class="FPS">0</div>
+
+    <div class="app">
+      <img class="pointer" src="IMG/pointer.png" alt="" />
+      <div class="scope">
+        <ul class="list"></ul>
+      </div>
+
+      <button onclick="start()" class="start">Крутить</button>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="tagsInput"
+          placeholder="Tags"
+          autocomplete="off"
+        />
+        <div id="tagsDropdown" class="dropdown"></div>
+        <div id="selectedTags" class="selected-filters"></div>
+
+        <input
+          type="text"
+          id="themesInput"
+          placeholder="Themes"
+          autocomplete="off"
+        />
+        <div id="themesDropdown" class="dropdown"></div>
+        <div id="selectedThemes" class="selected-filters"></div>
+      </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
